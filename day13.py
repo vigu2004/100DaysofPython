@@ -1,0 +1,1 @@
+# debugging lession in auditorium
