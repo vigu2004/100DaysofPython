@@ -35,10 +35,12 @@ while game_is_on:
 
     if b.xcor() > 380:
         b.reset_position()
+        score.l_point()
         score.update_score()
 
     if b.xcor() < -380:
         b.reset_position()
+        score.r_point()
         score.update_score()
 
 screen.exitonclick()
