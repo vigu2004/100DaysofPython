@@ -14,15 +14,11 @@ class Player(Turtle):
         self.setheading(90)
         self.reset_game()
 
-
     def move_forward(self):
-            self.forward(MOVE_DISTANCE)
-
-
+        self.forward(MOVE_DISTANCE)
 
     def reset_game(self):
-        self.goto(x=0,y=-280)
+        self.goto(x=0, y=-280)
 
     def game_end(self):
         return self.ycor() > 280
-

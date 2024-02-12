@@ -21,10 +21,9 @@ while game_is_on:
     time.sleep(0.1)
     screen.update()
 
-    x = random.randint(1,6)
+    x = random.randint(1, 6)
     if x == 1:
         car_manager.create_car()
-
 
     car_manager.move_car()
 
@@ -37,6 +36,5 @@ while game_is_on:
         player.reset_game()
         car_manager.next_level()
         scoreboard.increase_level()
-
 
 screen.exitonclick()

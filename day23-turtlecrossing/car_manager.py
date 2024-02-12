@@ -1,5 +1,6 @@
 from turtle import Turtle
 import random
+
 COLORS = ["red", "orange", "yellow", "green", "blue", "purple"]
 STARTING_MOVE_DISTANCE = 5
 MOVE_INCREMENT = 10
@@ -14,11 +15,11 @@ class CarManager(Turtle):
     def create_car(self):
         car = Turtle()
         car.shape("square")
-        car.shapesize(stretch_wid=1,stretch_len=3)
+        car.shapesize(stretch_wid=1, stretch_len=3)
         car.penup()
         car.color(random.choice(COLORS))
-        y_cor = random.randint(-270,270)
-        car.goto(300,y_cor)
+        y_cor = random.randint(-270, 270)
+        car.goto(300, y_cor)
         self.car_list.append(car)
 
     def move_car(self):
