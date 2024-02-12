@@ -22,3 +22,7 @@ class Player(Turtle):
 
     def reset_game(self):
         self.goto(x=0,y=-280)
+
+    def game_end(self):
+        return self.ycor() > 280
+
